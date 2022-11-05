@@ -43,7 +43,7 @@ public class Day9 {
         System.out.println(profit);*/
 
         // new approach
-        // find the maximum and then the minimum before that
+        // find the minimum price and maximum difference
         // test case {9, 7, 3, 6, 7, 8, 1}
 
         int x = prices[0];
