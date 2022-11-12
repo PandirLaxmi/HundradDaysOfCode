@@ -4,7 +4,8 @@ package com.demo.ck.class22;
 class Demo{
     int a =10; //object variable or instance variable, one memory space for each instance (object)
     static int b = 30; //class variable, there will be one memory space even there are hundreds instance for the class.
-    //instance variables and static/ class variables will be set to default values if not provided, but we need to initialize
+    //instance variables and static/ class variables will be set to default values if not provided,
+    // but we need to initialize local-variables
     void method1(){
         //local variables are temporary, it is born in the method and die when the methods end.
         int a =  20; // local variable. this needs to be initialized (required)
