@@ -23,10 +23,13 @@ public class ExamplesOfKeywords {
     //inheritance --constructor chaining
     // -- this and super keyword
     //polymorphism
-    //-- method overloading : multiple methods in same class with same name but either different number of parameters
-    //or different type of parameters. not return type should be same.
-    //--method overriding : methods with same name in parent and child class, wiht same return type and same number of
-    // parameters and same data type of parameters
+    /*-- method overloading : multiple methods in same class with same name but either different number of parameters
+    or different type of parameters. not return type should be same.*/
+    /*--method overriding : methods with same name in parent and child class, wiht same return type and same number of
+     parameters and same data type of parameters*/
+    /*-- Dynamic polymorphism/run time polymorphism
+    * when we create and object of child class with reference of the parent class
+    * we can call methods which are overriden in the child class only or parent class methods*/
     //encapsulation
     //abstraction
 }
