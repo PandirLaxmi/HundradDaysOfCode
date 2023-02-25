@@ -4,6 +4,7 @@ import java.util.*;
 
 public class Loop2 {
     public static void main(String []argh){
+        method(); // we can not call a non static method from a static context
         //sum of an AP
         Scanner in = new Scanner(System.in);
         int t=in.nextInt();
@@ -21,5 +22,18 @@ public class Loop2 {
             System.out.println();
         }
         in.close();
+    }
+
+    public static boolean method(){
+        int[] a = {10, 20, 30}; //local variables can't be static, we cant make them abstract and
+        // can't use access specifiers, it can only be final if needed.
+        try{
+            System.out.println(a[2]);
+            return true;
+        }
+        finally {
+            System.out.println("End");
+        }
+
     }
 }

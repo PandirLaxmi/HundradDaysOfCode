@@ -1,4 +1,4 @@
-package com.demo.ck.class27;
+package com.demo.ck.class26;
 
 class Bank{
 

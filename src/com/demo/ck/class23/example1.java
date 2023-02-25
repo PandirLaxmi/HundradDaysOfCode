@@ -1,8 +1,5 @@
 package com.demo.ck.class23;
 
-
-import java.util.TreeMap;
-
 class Car{
     int speed;
     void method1(int speed){

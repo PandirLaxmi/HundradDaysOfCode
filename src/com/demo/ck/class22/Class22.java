@@ -16,6 +16,19 @@ class Demo{
     void method2(){
         System.out.println(a);
     }
+
+    static class test{
+        //only an inner class can be static
+        /*use case:-An instance of an inner class cannot be created without an instance of the outer class. Therefore,
+        an inner class instance can access all the members of its outer class, without using a reference to the outer
+        class instance. For this reason, inner classes can help make programs simple and concise.
+        */
+        /*
+        The following are major differences between static nested classes and inner classes.
+            1. A static nested class may be instantiated without instantiating its outer class.
+            2. Inner classes can access both static and non-static members of the outer class. A static class can access
+            only the static members of the outer class.*/
+    }
 }
 
 class Bank{
@@ -30,12 +43,21 @@ class Bank{
         System.out.println(speed);
     }
 
-    static void printData2(){
+    static void printData2(){ // we can not override a static method
         System.out.println(speed);
+        speed = 100; // static or class variables can be updated.
         //System.out.println(balance); //non static fields can not be referenced from the static method,
         // it will result in compile time error
     }
 }
+
+class CityBank extends Bank{
+    /*void printData2(){ // we can not override a static method
+        instance method 'printData2()' in 'com.demo.ck.class22.CityBank' cannot override static method 'printData2()' in
+        'com.demo.ck.class22.Bank'
+    }*/
+}
+
 public class Class22 {
     //OOPS
     public static void main(String[] args) {
