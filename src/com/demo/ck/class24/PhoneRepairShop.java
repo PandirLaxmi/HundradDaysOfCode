@@ -17,4 +17,5 @@ public class PhoneRepairShop {
     void repair(Phone phone){
         phone.repair();
     }
+    Phone phone = new Phone(8);
 }
