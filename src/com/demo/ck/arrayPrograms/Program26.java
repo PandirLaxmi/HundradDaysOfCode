@@ -29,7 +29,9 @@ public class Program26 {
         System.out.println(secondSmallest);
 */
         // but it fails when the arrays contains negative numbers too. in such case we can make all elements positive and then can do the math
-        int minSum = numbers[0]+numbers[1];;
+
+        //Approach 2: find the absolute value of the sum
+        int minSum = numbers[0]+numbers[1];
         int num1 = 0;
         int num2 = 0;
         for (int i = 0; i < numbers.length; i++) {
