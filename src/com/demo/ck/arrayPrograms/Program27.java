@@ -9,7 +9,7 @@ public class Program27 {
         int[] numbers = {1,2,3};
         List<List<Integer>> result = new ArrayList<>();
         permutations(0, numbers, result);
-        //result.forEach(System.out::println);
+        result.forEach(System.out::println);
     }
 
 
@@ -27,7 +27,7 @@ public class Program27 {
                 swap(l, i, numbers);
             }
         }
-        System.out.println(res);
+        //System.out.println(res);
     }
     public static void swap(int l, int h, int[] numbers){
         int temp = numbers[l];
