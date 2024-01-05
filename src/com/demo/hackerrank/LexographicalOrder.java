@@ -11,9 +11,11 @@ class Solution {
             }
             for (int i = 0; i < list1.size(); i++) {
                 for (int j = list1.size() - 1; j > i; j--) {
-                    String tmp = list1.get(i);
-                    list1.set(i ,list1.get(j));
-                    list1.set(j ,tmp);
+                    if(list1.get(i).compareTo(list1.get(j)) > 0) {
+                        String tmp = list1.get(i);
+                        list1.set(i, list1.get(j));
+                        list1.set(j, tmp);
+                    }
                 }
             }
             smallest = list1.get(0);
