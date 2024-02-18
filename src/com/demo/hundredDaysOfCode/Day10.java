@@ -9,7 +9,7 @@ public class Day10 {
         int m = 3;
         int[] nums2 = {2,5,6};
         int n = 3;
-        int i = m-1;
+        /*int i = m-1;
         int j = n-1;
         int k = m+n-1;
         while(k >= 0 ){
@@ -29,7 +29,18 @@ public class Day10 {
             System.out.println(nums1[k]);
             k--;
 
+        }*/
+
+        for(int i = m-1 , j = n-1 , k = m+n-1 ; k >= 0 ;){
+            if(nums1[i] <= nums2[j]){
+                nums1[k++] = nums1[i];
+            }
+            else nums1[k++] =  nums2[k++];
         }
+        for (int num : nums1) {
+            System.out.println(num);
+        }
+
 
         ////////////////////////////////////**********************
         /*
