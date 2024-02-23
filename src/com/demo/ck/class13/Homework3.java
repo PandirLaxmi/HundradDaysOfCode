@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Homework3 {
     public static void main(String[] args) {
-        /*  1
+        /*   1
             121
            12321
           1234321

@@ -62,7 +62,7 @@ public class Homework1 {
             }
             System.out.println(sum);
         }*/
-        //6. Write a program to find greatest number from two dimention array
+        //6. Write a program to find the greatest number from two dimensional array
         int[][] a = {{1,2,3},
                     {2,13,4},
                     {5,4,3}};
