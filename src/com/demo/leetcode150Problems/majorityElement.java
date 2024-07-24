@@ -1,5 +1,7 @@
 package com.demo.leetcode150Problems;
 
+import java.util.HashSet;
+
 public class majorityElement {
     public static void main(String[] args) {
         /*Given an array nums of size n, return the majority element.
@@ -10,7 +12,7 @@ public class majorityElement {
     }
     public static int majorityElement(int[] nums){ //3,2,3,3,2,5,6
         //Boyer moore's algorithm
-        int target = -1;
+        /*int target = -1;
         int count=0;
         for (int num : nums) {
             if (count == 0) {
@@ -22,16 +24,21 @@ public class majorityElement {
             else
                 count--;
         }
-        return target;
+        return target;*/
+        //use set to get the list of the unique numbers
 
-        /*int n = nums.length/2;
+        int n = nums.length/2;
         int tempNo;
         int count=0;
         int majorityElement = 0;
+        HashSet<Integer> set = new HashSet<>();
         for(int i = 0; i < nums.length; i++){
+            set.add(nums[i]);
+        }
+        for(int i = 0; i < set.size(); i++){
             tempNo = nums[i];
             count = 0;
-            for(int j = 0 ; j < nums.length; j++){
+            for(int j = i ; j < nums.length; j++){
                 if(tempNo == nums[j]){
                     majorityElement = nums[j];
                     count++;
@@ -39,6 +46,6 @@ public class majorityElement {
             }
             if(count>n)
                 return majorityElement;
-        }*/
+        }return majorityElement;
     }
 }

@@ -16,7 +16,7 @@ public class Program26 {
                 }
         }
         for (int number : numbers) {
-            if (number <smallest) {
+            if (number < smallest) {
                 smallest = number;
             }
         }
